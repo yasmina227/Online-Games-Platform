@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLÉGANCE  Fashion Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+    <div class="top-announcement-bar">
+        <div class="header-container top-bar-content">
+            <div class="promo-text">
+                <span><i class="fa-solid fa-truck-fast"></i> Free shipping on orders over $50 | Use code: <strong>FASHION2026</strong></span>
+            </div>
+            <div class="top-bar-actions">
+                <div class="custom-dropdown">
+                    <button class="dropdown-trigger" type="button">USD ($) <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">USD ($)</a></li>
+                        <li><a href="#">EGP (E£)</a></li>
+                        <li><a href="#">SAR (SR)</a></li>
+                    </ul>
+                </div>
+                <div class="custom-dropdown">
+                    <button class="dropdown-trigger" type="button">English <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="main-navigation">
+            <div class="header-container nav-wrapper">
+                
+                <a class="brand-logo" href="#">
+                    <span class="logo-primary">ÉLÉGANCE</span>
+                    <span class="logo-secondary">FASHION</span>
+                </a>
+
+                <div class="nav-menu-wrapper" id="navMenu">
+                    <ul class="nav-links-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        
+                        <li class="nav-item has-mega-menu">
+                            <a class="nav-link" href="#" id="womenMegaMenu">Women <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                            <div class="mega-menu">
+                                <div class="header-container mega-menu-content">
+                                    <div class="mega-column">
+                                        <h4 class="column-title">Clothing</h4>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Elegant Dresses</a></li>
+                                            <li><a href="#">Tops & Shirts</a></li>
+                                            <li><a href="#">Pants & Jeans</a></li>
+                                            <li><a href="#">Jackets & Coats</a></li>
+                                            <li><a href="#">Activewear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4 class="column-title">Shoes & Bags</h4>
+                                        <ul class="mega-links">
+                                            <li><a href="#">High Heels</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                            <li><a href="#">Luxury Handbags</a></li>
+                                            <li><a href="#">Backpacks</a></li>
+                                            <li><a href="#">Wallets & Pouches</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4 class="column-title">Accessories</h4>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Jewelry & Glasses</a></li>
+                                            <li><a href="#">Women's Watches</a></li>
+                                            <li><a href="#">Scarves & Wraps</a></li>
+                                            <li><a href="#">Modern Perfumes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column promo-column">
+                                        <div class="promo-card">
+                                            <div class="promo-content">
+                                                <span class="promo-badge">30% OFF</span>
+                                                <h5>Summer Collection</h5>
+                                                <a href="#" class="promo-btn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sale-link" href="#">Discounts <span class="sale-tag">Sale</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-user-actions">
+                        <div class="search-field">
+                            <input type="text" placeholder="Search products...">
+                            <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="action-btn" title="My Account" id="userAccountBtn">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+
+                            <a href="#" class="action-btn" title="Wishlist" id="wishlistBtn">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="badge" id="wishlistCount">3</span>
+                            </a>
+
+                            <a href="#" class="action-btn" title="Shopping Cart" id="cartBtn">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="badge badge-danger" id="cartCount">2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    
+</body>
+</html>
