@@ -20,7 +20,7 @@
 
 body {
   background-color: var(--bg-dark);
-  font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
   min-height: 100vh;
   color: var(--text-main);
   overflow-x: hidden;
@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-  padding: .75rem;
+  padding: 0.75rem;
   border-radius: 12px;
   margin-bottom: 2rem;
   background: linear-gradient(135deg, var(--cyan-neon), var(--purple-neon));
@@ -195,7 +195,9 @@ body {
   background: linear-gradient(135deg, var(--cyan-neon), var(--purple-neon));
   box-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
   display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .avatar-link:hover {

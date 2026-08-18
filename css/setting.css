@@ -1,0 +1,59 @@
+:root {
+  --bg-main: #0a0b0d;
+  --bg-card: #121519;
+  --input-bg :#191e25;
+  --border-color: #1e242c;
+  --text-main: #ffffff;
+  --text-muted: #8a92a3;
+  --cyan-neon: #00f2fe;
+  --purple-neon: #9d4edd;
+  --lime-neon: #aacc00;
+  --radius-card: 12px;
+}
+/* -------------------------------- */
+.setting-container{
+    padding: 0 1.5rem 2rem calc(80px + 1.5rem);
+}
+.setting-header{
+    width: 100%;
+}
+.setting-header h2{
+    color: var(--cyan-neon);
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 0 0 10px var(--cyan-neon);
+   font-weight: bold;
+}
+
+.setting-header .setting-head-disc{
+    color: var(--text-muted);
+}
+.set-profile,.set-notification,.set-appearance,.set-audio{
+    border: 1px solid var(--cyan-neon);
+    border-radius: 1.5rem;
+}
+.form-control, .form-control:hover,.form-control:focus{
+    background-color: var(--input-bg);
+    color: white;
+    font-weight: bold;
+    border: .5px var(--border-color) solid;
+}
+.form-control:focus{
+outline: var(--cyan-neon);
+}
+.form-control:hover,.form-control:focus{
+    box-shadow: 0 0 5px 1px var(--cyan-neon);
+}
+.setting-profile-icon{
+    border: 1px solid var(--cyan-neon);
+    border-radius: 1rem;
+    color: var(--cyan-neon);
+    background-color: rgb(41, 46, 46);
+    margin-right: 1rem ;
+}
+.style-seeting-heads{
+    color: var(--cyan-neon);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--cyan-neon);
+    font-size: 1.75rem;
+}

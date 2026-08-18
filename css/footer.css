@@ -5,7 +5,8 @@ body {
   min-height: 100vh;
 }
 
-.main-content, .library-container {
+.main-content,
+.library-container {
   flex: 1 0 auto;
 }
 
@@ -13,9 +14,9 @@ body {
 .site-footer {
   background-color: var(--bg-card);
   border-top: 1px solid var(--border-color);
-  margin-left: 80px; 
+  margin-left: 80px;
   width: calc(100% - 80px);
-  margin-top: auto; 
+  margin-top: auto;
   padding-top: 2.5rem;
   transition: all 0.3s ease;
 }
@@ -79,7 +80,7 @@ body {
 }
 
 .col-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -197,7 +198,8 @@ body {
     transform: translateX(-50%);
   }
 
-  .logo-box, .contact-info p {
+  .logo-box,
+  .contact-info p {
     justify-content: center;
   }
 
