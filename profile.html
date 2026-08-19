@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <header class="sidebar">
+      <a href="profile.html" class="logo" data-name="Neon Viper">
+        <img src="assets/favicon.png" alt="Logo" />
+      </a>
+
+      <!-- Navigation Items -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active" data-tooltip="Home">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <!-- Current Active Link (Library) -->
+        <a href="#library" class="nav-link" data-tooltip="Library">
+          <i class="fa-solid fa-book-open"></i>
+        </a>
+
+        <a href="#" class="nav-link" data-tooltip="Trophies">
+          <i class="fa-solid fa-trophy"></i>
+        </a>
+
+        <a href="#social" class="nav-link" data-tooltip="Social">
+          <i class="fa-solid fa-users"></i>
+        </a>
+
+        <a href="#setting" class="nav-link" data-tooltip="Settings">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </header>
+
+    
+      <div class="top-bar">
+        <div class="search-box">
+          <span class="search-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            type="text"
+            placeholder="Search games, players, achievements..."
+            aria-label="Search"
+          />
+        </div>
+    </div>
+
+    <section class="set">
+
+        <div>
+        <h1 class="setting">Settings</h1>
+        <p class="setting-paragraph">Customize your gaming experience</p>
+    </div>
+
+    <div class="container-profile">
+
+        <!-- Card 1: Profile -->
+        <div class="games">
+            <h2 class="profile">Profile</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="NeonViper">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="neonviper@nebula.gg">
+                </div>
+                <div class="input-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" placeholder="Competitive gamer · Cyberpunk enthusiast · Level 42"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Card 2: Notifications -->
+        <div class="games">
+            <h2>Notifications</h2>
+
+            <div class="toggle-item">
+                <div>
+                    <h3>Push Notifications</h3>
+                    <p>Receive notifications about game updates and events</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-item">
+                <div>
+                    <h3>Friend Requests</h3>
+                    <p>Get notified when someone sends you a friend request</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-item">
+                <div>
+                    <h3>Achievement Alerts</h3>
+                    <p>Show alerts when you unlock new achievements</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Card 3: Appearance -->
+        <div class="games">
+            <h2>Appearance</h2>
+            <p class="section-label">Neon Profile Theme</p>
+
+            <div class="themes-container">
+                <label class="theme-option active">
+                    <input type="radio" name="theme" value="cyan" checked>
+                    <span class="theme-box cyan"></span>
+                    <span class="theme-name">Neon Cyan</span>
+                </label>
+
+                <label class="theme-option">
+                    <input type="radio" name="theme" value="purple">
+                    <span class="theme-box purple"></span>
+                    <span class="theme-name">Electric Purple</span>
+                </label>
+
+                <label class="theme-option">
+                    <input type="radio" name="theme" value="lime">
+                    <span class="theme-box lime"></span>
+                    <span class="theme-name">Cyber Lime</span>
+                </label>
+            </div>
+
+            <div class="slider-group">
+                <label for="ui-scale">UI Scale</label>
+                <input type="range" id="ui-scale" min="80" max="120" value="100">
+            </div>
+        </div>
+
+        <!-- Card 4: Audio -->
+        <div class="games">
+            <h2>Audio</h2>
+
+            <div class="slider-group">
+                <label for="master-volume">Master Volume</label>
+                <input type="range" id="master-volume" min="0" max="100" value="80">
+            </div>
+
+            <div class="toggle-group">
+                <div class="toggle-text">
+                    <label for="sound-effects">Sound Effects</label>
+                    <p>Enable UI sound effects and interactions</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="sound-effects" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    
+</body>
+
+</html>
