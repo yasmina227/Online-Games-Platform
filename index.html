@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/library.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/leadersBoardsPage.css" />
   </head>
   <body>
     <!-- -------------- start of main ----------------- -->
@@ -376,7 +377,187 @@
         </article>
       </div>
     </section>
-    <!-- -------------- end of main ----------------- -->
+    <!-- -------------- end of library ----------------- -->
+
+    <!------ Start of LeadersBoards Page ----->
+
+    <!-- Container for Leaderboard Section -->
+     <section class="leaderboard-container" id="trophies">
+<div class="container-fluid leaderboard-section  ">
+     <!-- Header Content -->
+<div class="header-content mb-4">
+            <h1 class="main-title fw-bold  mb-2 gradient-text">Global Leaderboards
+            </h1>
+            <p class="subtitle text-secondary mb-0">
+             Compete with the best players worldwide.
+            </p>
+        </div>
+
+    <!-- Filter Buttons -->
+<div class="classes row g-2 g-md-3 mb-5">
+    <div class="col-3">
+        <button class="filter-btn active w-100" onclick="changeRanking('alltime')">
+            All Time
+        </button>
+        
+    </div>
+    <div class="col-3">
+        <button class="filter-btn w-100" onclick="changeRanking('weekly')">
+            This Week
+        </button>
+    </div>
+    <div class="col-3">
+        <button class="filter-btn w-100" onclick="changeRanking('today')">
+            Today
+        </button>
+    </div>
+    <div class="col-3">
+        <button class="filter-btn w-100" onclick="changeRanking('friends')">
+            Friends
+        </button>
+    </div>
+</div>
+
+<!-- Top 3 Players -->
+<div class="row align-items-end text-center mb-5 g-4">
+    
+    <!-- Second Place -->
+    <div class="col-4">
+        <div class="podium-card rank-2">
+            <div class="avatar-wrapper mx-auto mb-3">
+                <img src="https://i.pravatar.cc/150?img=11" alt="NeonViper" class="avatar-img">
+                <div class="badge-icon medal-silver">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+            </div>
+            <h5 class="player-name fw-bold text-white mb-1">Second Place</h5>
+            <p class="player-score fw-bold text-secondary mb-0">142,180</p>
+        </div>
+    </div>
+
+    <!-- First Place -->
+    <div class="col-4">
+        <div class="podium-card rank-1">
+            <div class="avatar-wrapper mx-auto mb-3">
+                <img src="https://i.pravatar.cc/150?img=33" alt="CyberNinja" class="avatar-img">
+                <div class="badge-icon crown-gold">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+            </div>
+            <h4 class="player-name fw-bold text-white mb-1">First Place</h4>
+            <p class="player-score fw-bold text-lime mb-0">148,250</p>
+        </div>
+    </div>
+
+    <!-- Third Place -->
+    <div class="col-4">
+        <div class="podium-card rank-3">
+            <div class="avatar-wrapper mx-auto mb-3">
+                <img src="https://i.pravatar.cc/150?img=60" alt="QuantumRush" class="avatar-img">
+                <div class="badge-icon trophy-bronze">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+            </div>
+            <h5 class="player-name fw-bold text-white mb-1">Third Place</h5>
+            <p class="player-score fw-bold text-amber mb-0">138,920</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="table-responsive my-4">
+    <table class="table table-dark table-hover align-middle custom-table">
+        <!-- table headers -->
+        <thead>
+            <tr class="text-cyan">
+                <th scope="col">Rank</th>
+                <th scope="col">Player</th>
+                <th scope="col">Score</th>
+                <th scope="col">Level</th>
+                <th scope="col"><i class="fa-solid fa-chart-line me-1"></i> Streak</th>
+            </tr>
+        </thead>
+        
+        <!-- Players Ranking-->
+        <tbody>
+            <!-- #1 -->
+            <tr>
+                <td><span class="rank-circle rank-1-bg">1</span></td>
+                <td>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="https://i.pravatar.cc/150?img=33" class="player-avatar" alt="CyberNinja">
+                        <span class="fw-bold text-white">CyberNinja</span>
+                    </div>
+                </td>
+                <td class="fw-bold text-white">148,250</td>
+                <td class="text-secondary">Lvl 52</td>
+                <td><span class="badge badge-purple">28 days</span></td>
+            </tr>
+
+            <!-- #2 -->
+            <tr>
+                <td><span class="rank-circle rank-2-bg">2</span></td>
+                <td>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="https://i.pravatar.cc/150?img=11" class="player-avatar" alt="NeonViper">
+                        <span class="fw-bold text-white">NeonViper</span>
+                    </div>
+                </td>
+                <td class="fw-bold text-white">142,180</td>
+                <td class="text-secondary">Lvl 42</td>
+                <td><span class="badge badge-purple">21 days</span></td>
+            </tr>
+            <!-- #3 -->
+            <tr>
+                <td><span class="rank-circle rank-3-bg">3</span></td>
+                <td>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="https://i.pravatar.cc/150?img=60" class="player-avatar" alt="QuantumRush">
+                        <span class="fw-bold text-white">QuantumRush</span>
+                    </div>
+                </td>
+                <td class="fw-bold text-white">138,920</td>
+                <td class="text-secondary">Lvl 48</td>
+                <td><span class="badge badge-purple">19 days</span></td>
+            </tr>
+
+            <!-- #4 -->
+            <tr>
+                <td><span class="rank-normal">#4</span></td>
+                <td>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="https://i.pravatar.cc/150?img=5" class="player-avatar" alt="VoidWalker">
+                        <span class="fw-bold text-white">VoidWalker</span>
+                    </div>
+                </td>
+                <td class="fw-bold text-white">135,400</td>
+                <td class="text-secondary">Lvl 45</td>
+                <td><span class="badge badge-purple">17 days</span></td>
+            </tr>
+
+            <!-- #5 -->
+            <tr>
+                <td><span class="rank-normal">#5</span></td>
+                <td>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="https://i.pravatar.cc/150?img=8" class="player-avatar" alt="PhantomGlitch">
+                        <span class="fw-bold text-white">PhantomGlitch</span>
+                    </div>
+                </td>
+                <td class="fw-bold text-white">132,850</td>
+                <td class="text-secondary">Lvl 41</td>
+                <td><span class="badge badge-purple">15 days</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+     </section>
+    <!------ End of LeadersBoards Page ------>
+    
+
+   
+          
 
     <!-- ---------------start of settings ------------ -->
     <section id="setting" class="setting-container">
