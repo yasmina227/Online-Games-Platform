@@ -48,7 +48,7 @@ body {
   height: 38px;
   border-radius: 10px;
   object-fit: cover;
-  border: 1px solid var(--cyan-neon);
+  border: 1px solid var(--main-neon);
   box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .brand-name .highlight {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
 }
 
 .brand-desc {
@@ -71,7 +71,7 @@ body {
 
 /* Titles */
 .col-title {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -100,7 +100,7 @@ body {
 }
 
 .contact-info i {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   width: 16px;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   transform: translateX(5px);
   text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
 }
@@ -154,7 +154,7 @@ body {
 
 .social-links a:hover {
   color: #ffffff;
-  background: linear-gradient(135deg, var(--cyan-neon), var(--purple-neon));
+  background: linear-gradient(135deg, var(--main-neon), var(--purple-neon));
   border-color: transparent;
   transform: translateY(-3px);
   box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);

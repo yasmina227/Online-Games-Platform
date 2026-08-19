@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/library.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/setting.css" />
-
   </head>
   <body>
     <!-- -------------- start of main ----------------- -->
@@ -380,109 +379,213 @@
     <!-- -------------- end of main ----------------- -->
 
     <!-- ---------------start of settings ------------ -->
-       <section id="setting" class="setting-container" >
-        
-          <div class="setting-header text-center">
-            <h2 class="">Settings</h2>
-            <p class="setting-head-disc">
-                 Customize your gaming experience
-            </p>
-          </div>
+    <section id="setting" class="setting-container">
+      <div class="setting-header text-center">
+        <h2 class="">Settings</h2>
+        <p class="setting-head-disc">Customize your gaming experience</p>
+      </div>
 
-          <div class="container-fluid px-3 px-md-4">
-                <div class=" setting-body row  g-5 py-4 ">
-            <!-- profile  -->
-            <div class="col-12 col-md-6 mb-3">
-              <div class="set-profile p-3 d-flex flex-column ">
-                 <div class="setting-profile-header mb-2">
-                   <i class="fa-regular fa-user setting-profile-icon p-3 " ></i><span class="style-seeting-heads">Profile</span>
-                 </div>
-                 <div class="form-group">
-                     <label for="userName">username</label>
-                      <input type="text" class="form-control" value="yasmin" id="userName">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="setting-body row g-5 py-4">
+          <!-- profile  -->
+          <div class="col-12 col-md-6 mb-3">
+            <div class="set-profile p-3 d-flex flex-column">
+              <div class="setting-profile-header mb-2">
+                <i class="fa-regular fa-user setting-profile-icon p-3"></i
+                ><span class="style-seeting-heads">Profile</span>
+              </div>
+              <div class="form-group">
+                <label for="userName">username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="yasmin"
+                  id="userName"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  value="yasmin@gmail.com"
+                  id="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="bio">bio</label>
+                <input
+                  type="text"
+                  class="form-control p-1"
+                  value="stop caring  '_'"
+                  id="bio"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- notification  -->
+          <div class="col-12 col-md-6 mb-3 ">
+            <div class="set-notification p-3 pb-sm-1">
+              <div class="setting-profile-header mb-2">
+                <i class="fa-regular fa-bell setting-profile-icon p-3"></i
+                ><span class="style-seeting-heads">Notifications</span>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-info">
+                  <h5>Push Notifications</h5>
+                  <p>Receive notifications about game updates and events</p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="pushNotif" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-info">
+                  <h5>Friend Requests</h5>
+                  <p>Get notified when someone sends you a friend request</p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="friendReq" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-info">
+                  <h5>Achievement Alerts</h5>
+                  <p>Show alerts when you unlock new achievements</p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="achieveAlerts" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- appearaance  -->
+          <div class="col-12 col-md-6 mb-3">
+            <div class="set-appearance">
+              <!-- header -->
+              <div class="setting-profile-header mb-2">
+                <i class="fa-solid fa-palette setting-profile-icon p-3"></i>
+                <span class="style-seeting-heads">Appearance</span>
+              </div>
+
+              <h3 class="theme-header mb-3">Neon Profile Theme</h3>
+
+              <!----------------------- -->
+              <div class="row g-2 theme-btn-container">
+                <!-- theme cyan -->
+                <div class="col-12 col-sm-4">
+                  <div class="theme-btn cyan-btn p-2 active" data-theme="cyan">
+                    <div class="theme-btn-color theme-cyan-color"></div>
+                    <p class="theme-btn-tit theme-cyan-tit m-0">Cyan Neon</p>
                   </div>
-                 
-                  <div class="form-group">
-                     <label for="email">email</label>
-                      <input type="email" class="form-control" value="yasmin@gmail.com" id="email">
+                </div>
+
+                <!-- theme purple -->
+                <div class="col-12 col-sm-4">
+                  <div class="theme-btn purple-btn p-2" data-theme="purple">
+                    <div class="theme-btn-color theme-purple-color"></div>
+                    <p class="theme-btn-tit theme-purple-tit m-0">
+                      purple Neon
+                    </p>
                   </div>
-                  <div class="form-group">
-                     <label for="bio">bio</label>
-                      <input type="text" class="form-control  p-1" value="stop caring  '_'" id="bio">
+                </div>
+
+                <!-- theme lime -->
+                <div class="col-12 col-sm-4">
+                  <div class="theme-btn lime-btn p-2" data-theme="lime">
+                    <div class="theme-btn-color theme-lime-color"></div>
+                    <p class="theme-btn-tit theme-lime-tit m-0">lime Neon</p>
                   </div>
-                 
-            </div>
-            </div>
-            <!-- notification  -->
-            <div class="col-12 col-md-6 mb-3">
-              <div class="set-notification  p-3 ">
-                  <div class="setting-profile-header mb-2">
-                   <i class="fa-regular fa-bell setting-profile-icon p-3 " ></i><span class="style-seeting-heads">Notifications</span>
-                 </div>
-
-                  <div class="notification-item">
-                      <div class="notification-info">
-                         <h5>Push Notifications</h5>
-                         <p>Receive notifications about game updates and events</p>
-                      </div>
-                      <label class="toggle-switch">
-                      <input type="checkbox" id="pushNotif">
-                      <span class="slider"></span>
-                     </label>
-                   </div>
-
-                   <div class="notification-item ">
-                      <div class="notification-info ">
-                         <h5>Friend Requests</h5>
-                         <p>Get notified when someone sends you a friend request</p>
-                      </div>
-                      <label class="toggle-switch">
-                      <input type="checkbox" id="friendReq" checked>
-                       <span class="slider"></span>
-                      </label>
-                   </div>
-
-                   <div class="notification-item">
-                      <div class="notification-info">
-                         <h5>Achievement Alerts</h5>
-                         <p>Show alerts when you unlock new achievements</p>
-                      </div>
-                      <label class="toggle-switch">
-                        <input type="checkbox" id="achieveAlerts" checked>
-                        <span class="slider"></span>
-                      </label>
-                   </div>
-            </div>
-            </div>
-            <!-- appearaance  -->
-            <div class="col-12 col-md-6 mb-3">
-              <div class="set-appearance  p-3">
-                  <div class="setting-profile-header mb-2">
-                   <i class="fa-solid fa-palette setting-profile-icon p-3 " ></i><span class="style-seeting-heads">Appearance</span>
-                 </div>
-            </div>
-            </div>
-            <!-- audio  -->
-            <div class="col-12 col-md-6 mb-3">
-              <div class="set-audio  p-3">
-                   <div class="setting-profile-header mb-2">
-                   <i class="fa-solid fa-volume-high setting-profile-icon p-3 " ></i><span class="style-seeting-heads">Audio</span>
-                 </div>
-            </div>
+                </div>
+              </div>
+              <!-- ------------------ -->
             </div>
           </div>
-          </div>
-          
-          <!-- -------------------------------------- -->
-           <!-- setting footer  -->
-          <div class="setting-footer">
-            <div class="set-privacy">
+          <!-- audio  -->
+          <div class="col-12 col-md-6 mb-3">
+            <div class="set-audio p-3">
+              <!-- header -->
+              <div class="setting-profile-header mb-3">
+                <i
+                  class="fa-solid fa-volume-high setting-profile-icon p-2 me-2"
+                ></i>
+                <span class="style-seeting-heads">Audio</span>
+              </div>
 
+              <!-- volume slider -->
+              <div class="audio-item mb-4">
+                <label for="masterVolume" class="setting-label mb-2"
+                  >Master Volume</label
+                >
+                <input
+                  type="range"
+                  class="custom-range"
+                  id="masterVolume"
+                  min="0"
+                  max="100"
+                  value="75"
+                />
+              </div>
+
+              <!-- sound  toggle -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <div>
+                  <h6 class="setting-title mb-1">Sound Effects</h6>
+                  <p class="setting-desc mb-0">
+                    Enable UI sound effects and interactions
+                  </p>
+                </div>
+                <label class="custom-switch-audio">
+                  <input type="checkbox" checked />
+                  <span class="slider-audio round-audio"></span>
+                </label>
+              </div>
+
+              <hr class="setting-divider my-3" />
+
+             
+              <div class="setting-profile-header mb-3">
+                <i
+                  class="fa-solid fa-gamepad setting-profile-icon game-icon p-2 me-2"
+                ></i>
+                <span class="style-seeting-heads">Gameplay</span>
+              </div>
+
+              
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="setting-title mb-1">Auto-play Videos</h6>
+                  <p class="setting-desc mb-0">
+                    Automatically play game trailers on hover
+                  </p>
+                </div>
+                
+                <label class="custom-switch-audio">
+                  <input type="checkbox" />
+                  <span class="slider-audio round-audio"></span>
+                </label>
+              </div>
             </div>
-            <input type="button" value="save changes">
           </div>
-        
-       </section>
+        </div>
+      </div>
+
+      <!-- -------------------------------------- -->
+      <!-- setting footer  -->
+      <div class="setting-footer">
+        <div class="set-privacy"></div>
+        <input type="button" value="save changes" class="save-btn  " />
+      </div>
+    </section>
     <!-- ---------------end of settings -------------- -->
 
     <!-- -------------- start of footer ----------------->
@@ -495,7 +598,7 @@
               src="assets/favicon.png"
               alt="NeonViper Logo"
               class="footer-logo"
-             />
+            />
             <span class="brand-name"
               >NEON<span class="highlight">Abyss</span></span
             >
@@ -553,10 +656,7 @@
 
       <!-- Bottom Copyright Bar -->
       <div class="bottom-bar">
-        <p>
-          &copy;2026 NeonAbyss. All rights
-          reserved.
-        </p>
+        <p>&copy;2026 NeonAbyss. All rights reserved.</p>
       </div>
     </footer>
 
