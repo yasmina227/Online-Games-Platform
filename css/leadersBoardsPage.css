@@ -11,9 +11,11 @@
   --text-main: #ffffff;
   --text-muted: #8a92a3;
 }
-.leaderboard-section{
-    padding: 0 1.5rem 2rem calc(80px + 1.5rem);
+
+.leaderboard-section {
+  padding: 0 1.5rem 2rem calc(80px + 1.5rem);
 }
+
 /* header content */
 .header-content {
   text-align: left;
@@ -23,7 +25,6 @@
 }
 
 /* filters for buttons */
-
 .filter-btn {
   background-color: var(--bg-card);
   color: var(--text-main);
@@ -158,10 +159,13 @@
 }
 
 /* ------------------- */
-/* Table Base */
+/* Table Base (خلفية داكنة سوداء) */
 .custom-table {
-  --bs-table-bg: transparent;
+  --bs-table-bg: var(--bg-card) !important;
+  background-color: var(--bg-card) !important;
   border-spacing: 0 8px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .text-cyan {
@@ -236,3 +240,42 @@ body.theme-lime {
   --main-neon: var(--lime-neon);
 }
 
+/* -------------------------------- */
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .leaderboard-section {
+    padding: 0 1rem 2rem 1rem; /* إلغاء المساحة الجانبية الكبيرة للشاشات الصغيرة */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  /* تصغير أحجام صور المراكز الأولى لتناسب الشاشات الصغيرة */
+  .rank-1 .avatar-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rank-2 .avatar-wrapper {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .rank-3 .avatar-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+}
