@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function (e) {
 
       const selectedBtn = e.target.closest(".theme-btn");
-      if (!selectedBtn) return;
+      
 
       themeBtns.forEach((b) => b.classList.remove("active"));
       selectedBtn.classList.add("active");
