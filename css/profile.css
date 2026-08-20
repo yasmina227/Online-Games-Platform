@@ -1,15 +1,4 @@
- * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
 
- body {
-   background-color: #12131c;
-   color: #ffffff;
-   padding: 30px;
- }
 
  body {
    display: flex;
@@ -17,7 +6,7 @@
    min-height: 100vh;
    background-color: #12131c;
    color: #ffffff;
-   padding: 30px;
+   padding:  0 1.5rem 2rem calc(80px + 1.5rem);
  }
 
 

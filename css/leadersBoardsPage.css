@@ -1,0 +1,297 @@
+:root {
+  --bg-main: #0a0b0d;
+  --bg-card: #121519;
+  --bg-btn: #1a1c23;
+  --input-bg: #191e25;
+  --border-color: #1e242c;
+  --cyan-neon: #00f2fe;
+  --purple-neon: #9d4edd;
+  --lime-neon: #aacc00;
+  --main-neon: var(--cyan-neon);
+  --text-main: #ffffff;
+  --text-muted: #8a92a3;
+}
+
+/* Set leaderboard layout spacing */
+.leaderboard-section {
+  padding: 0 1.5rem 2rem calc(80px + 1.5rem);
+}
+
+/* Style main section header */
+.header-content {
+  text-align: left;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  color: var(--main-neon);
+}
+
+/* Style filter toggle buttons */
+.filter-btn {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+/* Scale filter button on hover */
+.filter-btn:hover {
+  background-color: var(--bg-btn);
+  color: var(--main-neon);
+  transform: scale(1.05);
+}
+
+/* Highlight active filter button */
+.filter-btn.active {
+  background-color: var(--bg-card);
+  color: var(--main-neon);
+  border-color: var(--main-neon);
+  box-shadow: 0 0 12px var(--main-neon);
+}
+
+/* Set container side padding */
+.classes {
+  padding: 0 1rem;
+}
+
+/* Style main title font */
+.main-title {
+  letter-spacing: 0.5px;
+  font-size: 3.5rem;
+}
+
+/* Style subtitle font size */
+.subtitle {
+  font-size: 1.25rem;
+}
+
+/* Position avatar image container */
+.avatar-wrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 12px;
+}
+
+/* Style circular user avatar */
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+}
+
+/* Set rank 1 avatar size */
+.rank-1 .avatar-wrapper {
+  width: 150px;
+  height: 150px;
+}
+
+/* Add lime glow to rank 1 avatar */
+.rank-1 .avatar-img {
+  border-color: var(--lime-neon);
+  box-shadow: 0 0 20px var(--lime-neon);
+}
+
+/* Add cyan glow to rank 2 avatar */
+.rank-2 .avatar-img {
+  border-color: var(--cyan-neon);
+  box-shadow: 0 0 10px var(--cyan-neon);
+}
+
+/* Set rank 2 avatar size */
+.rank-2 .avatar-wrapper {
+  width: 125px;
+  height: 125px;
+}
+
+/* Add purple glow to rank 3 avatar */
+.rank-3 .avatar-img {
+  border-color: var(--purple-neon);
+  box-shadow: 0 0 10px var(--purple-neon);
+}
+
+/* Set rank 3 avatar size */
+.rank-3 .avatar-wrapper {
+  width: 117px;
+  height: 117px;
+}
+
+/* Position badge icon on avatar */
+.badge-icon {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: 2px solid var(--bg-main);
+}
+
+/* Color gold crown icon */
+.crown-gold {
+  background: var(--lime-neon);
+  color: var(--bg-main);
+  box-shadow: 0 0 20px var(--lime-neon);
+}
+
+/* Color silver medal icon */
+.medal-silver {
+  background: var(--cyan-neon);
+  color: var(--bg-main);
+  box-shadow: 0 0 20px var(--cyan-neon);
+}
+
+/* Color bronze trophy icon */
+.trophy-bronze {
+  background: var(--purple-neon);
+  color: var(--text-main);
+  box-shadow: 0 0 20px var(--purple-neon);
+}
+
+/* Set lime score text color */
+.text-lime {
+  color: var(--lime-neon) !important;
+}
+
+/* Set purple score text color */
+.text-amber {
+  color: var(--purple-neon) !important;
+}
+
+/* Style dark table background and structure */
+.custom-table {
+  --bs-table-bg: var(--bg-card) !important;
+  background-color: var(--bg-card) !important;
+  border-spacing: 0 8px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Set cyan text color */
+.text-cyan {
+  color: var(--main-neon) !important;
+}
+
+/* Style table player avatar */
+.player-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style circle rank badge base */
+.rank-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Add lime border to rank 1 badge */
+.rank-1-bg {
+  border: 2px solid var(--lime-neon);
+  color: var(--lime-neon);
+}
+
+/* Add cyan border to rank 2 badge */
+.rank-2-bg {
+  border: 2px solid var(--cyan-neon);
+  color: var(--cyan-neon);
+}
+
+/* Add purple border to rank 3 badge */
+.rank-3-bg {
+  border: 2px solid var(--purple-neon);
+  color: var(--purple-neon);
+}
+
+/* Style standard rank number text */
+.rank-normal {
+  color: var(--text-muted);
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding-left: 4px;
+}
+
+/* Style purple pill badge */
+.badge-purple {
+  background: var(--bg-btn);
+  color: var(--purple-neon);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Set appearance section padding */
+.set-appearance {
+  padding: 2rem 1rem 7.6rem 1.5rem;
+}
+
+/* Apply default cyan theme color */
+body.theme-main {
+  --main-neon: var(--cyan-neon);
+}
+
+/* Apply purple theme color */
+body.theme-purple {
+  --main-neon: var(--purple-neon);
+}
+
+/* Apply lime theme color */
+body.theme-lime {
+  --main-neon: var(--lime-neon);
+}
+
+/* Adjust padding for tablet screens */
+@media (max-width: 991px) {
+  .leaderboard-section {
+    padding: 1rem  .1rem;
+  }
+}
+
+/* Scale down fonts and avatars for mobile screens */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .rank-1 .avatar-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rank-2 .avatar-wrapper {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .rank-3 .avatar-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+}
