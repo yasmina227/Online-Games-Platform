@@ -1,3 +1,5 @@
+// Nested Data Structure for Leaderboard Rankings.
+// adding static DB for top 3 players using array .
 const leaderboardData = {
     'alltime': {
         top3: [
@@ -5,6 +7,7 @@ const leaderboardData = {
             { name: "NeonViper", score: "142,180", img: "https://i.pravatar.cc/150?img=11" },
             { name: "QuantumRush", score: "138,920", img: "https://i.pravatar.cc/150?img=60" }
         ],
+        // showing the stored data using array.
         table: [
             { rank: 1, name: "CyberNinja", img: "https://i.pravatar.cc/150?img=33", score: "148,250", level: "Lvl 52", streak: "28 days" },
             { rank: 2, name: "NeonViper", img: "https://i.pravatar.cc/150?img=11", score: "142,180", level: "Lvl 42", streak: "21 days" },
@@ -57,9 +60,8 @@ const leaderboardData = {
     }
 };
 
-// Main function triggered on filter button click
-function changeRanking(type) {
-    // 1. Update active button state
+// 1. Update active button state
+//all buttins in HTML  are stored in one variable using "querySelectorAll" .
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
     
