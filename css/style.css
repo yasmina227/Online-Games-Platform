@@ -137,7 +137,7 @@ body {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: .5rem;
 }
 
 /* Top Bar & Search Box */
@@ -319,6 +319,7 @@ body {
     padding: 0.8rem 1.5rem;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
+    
   }
 .top-bar {
   margin-top:80px ;
@@ -332,12 +333,13 @@ body {
   .nav-menu {
     flex-direction: row;
     width: auto;
-    gap: 0.6rem;
+    gap: 0.5rem;
+    flex-wrap:wrap;
   }
 
   .nav-link {
-    width: 38px;
-    height: 38px;
+    width: 2rem;
+    height: 2rem;
     font-size: 0.95rem;
   }
 
