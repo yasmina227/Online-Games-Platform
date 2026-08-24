@@ -178,34 +178,5 @@ label {
     left: 100px;
 }
 
-/*.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 19px;
-}
-
-.form-group input,
-textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 0.5px solid #cbcbd8;
-    outline: none;
-}
 
 
-
-.form-group label {
-    margin-bottom: 8px;
-}
-
-.form-group select {
-    width: 564px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 1px solid #3f3f46;
-}
-
-
-
-.
