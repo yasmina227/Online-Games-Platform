@@ -5,7 +5,8 @@ body {
   min-height: 100vh;
 }
 
-.main-content, .library-container {
+.main-content,
+.library-container {
   flex: 1 0 auto;
 }
 
@@ -13,9 +14,9 @@ body {
 .site-footer {
   background-color: var(--bg-card);
   border-top: 1px solid var(--border-color);
-  margin-left: 80px; 
+  margin-left: 80px;
   width: calc(100% - 80px);
-  margin-top: auto; 
+  margin-top: auto;
   padding-top: 2.5rem;
   transition: all 0.3s ease;
 }
@@ -47,7 +48,7 @@ body {
   height: 38px;
   border-radius: 10px;
   object-fit: cover;
-  border: 1px solid var(--cyan-neon);
+  border: 1px solid var(--main-neon);
   box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 .brand-name .highlight {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
 }
 
 .brand-desc {
@@ -70,7 +71,7 @@ body {
 
 /* Titles */
 .col-title {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -79,7 +80,7 @@ body {
 }
 
 .col-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -99,7 +100,7 @@ body {
 }
 
 .contact-info i {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   width: 16px;
 }
 
@@ -123,7 +124,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: var(--cyan-neon);
+  color: var(--main-neon);
   transform: translateX(5px);
   text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
 }
@@ -153,7 +154,7 @@ body {
 
 .social-links a:hover {
   color: #ffffff;
-  background: linear-gradient(135deg, var(--cyan-neon), var(--purple-neon));
+  background: linear-gradient(135deg, var(--main-neon), var(--purple-neon));
   border-color: transparent;
   transform: translateY(-3px);
   box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
@@ -197,7 +198,8 @@ body {
     transform: translateX(-50%);
   }
 
-  .logo-box, .contact-info p {
+  .logo-box,
+  .contact-info p {
     justify-content: center;
   }
 

@@ -5,127 +5,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
-    <div>
-        <h1 class="setting">Settings</h1>
-        <p class="setting-paragraph">Customize your gaming experience</p>
-    </div>
+    <!-- --------------------start of header---------------  -->
+    <header class="sidebar">
+      <a href="#home" class="logo" data-name="Neon Viper">
+        <img src="assets/favicon.png" alt="Logo" />
+      </a>
 
-    <div class="container-profile">
+      <!-- Navigation Items -->
+      <nav class="nav-menu">
+        <a href="/index.html#home" class="nav-link active" data-tooltip="Home">
+          <i class="fa-solid fa-house"></i>
+        </a>
 
-        <!-- Card 1: Profile -->
-        <div class="games">
-            <h2 class="profile">Profile</h2>
-            <form>
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="NeonViper">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="neonviper@nebula.gg">
-                </div>
-                <div class="input-group">
-                    <label for="bio">Bio</label>
-                    <textarea id="bio" placeholder="Competitive gamer · Cyberpunk enthusiast · Level 42"></textarea>
-                </div>
-            </form>
+        <!-- Current Active Link (Library) -->
+        <a href="/index.html#library" class="nav-link" data-tooltip="Library">
+          <i class="fa-solid fa-book-open"></i>
+        </a>
+
+        <a href="/index.html#trophies" class="nav-link" data-tooltip="Trophies">
+          <i class="fa-solid fa-trophy"></i>
+        </a>
+
+        <a href="/index.html#social" class="nav-link" data-tooltip="profile">
+          <i class="fa-solid fa-users"></i>
+        </a>
+
+        <a href="/index.html#setting" class="nav-link" data-tooltip="Settings">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- --------------------end of header---------------  -->
+    <!-- --------------------start of profile---------------  -->
+
+     <section class="profile">
+    <div class="profile-container">
+      
+      <div class="profile-card">
+        <div class="profile-header-bg"></div>
+        <div class="profile-avatar-wrapper">
+          <img src="https://th.bing.com/th/id/OIP.NLh6c2gtouyYHCcQEjNgRQHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="profile-avatar">
+        </div>
+        <div class="profile-identity">
+          <h1 class="user-name">yasmin</h1>
+          <span class="user-tag">@yasmina</span>
+          <span class="rank-badge">PRO GAMER>>>>></span>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        
+        <div class="info-card">
+          <h2 class="card-title">Personal Details</h2>
+          <div class="info-group">
+            <label>Email</label>
+            <p>yasmin@gail.com</p>
+          </div>
+          <div class="info-group">
+            <label>Joined</label>
+            <p>January 2024</p>
+          </div>
+          <div class="info-group">
+            <label>Region</label>
+            <p>Egypt</p>
+          </div>
+          <button class="edit-btn"><i class="fa-solid fa-pen"></i> Edit Profile</button>
         </div>
 
-        <!-- Card 2: Notifications -->
-        <div class="games">
-            <h2>Notifications</h2>
-
-            <div class="toggle-item">
-                <div>
-                    <h3>Push Notifications</h3>
-                    <p>Receive notifications about game updates and events</p>
-                </div>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
+        <div class="info-card">
+          <h2 class="card-title">Activity Overview</h2>
+          <div class="stats-container">
+            <div class="stat-box">
+              <span class="stat-value">142</span>
+              <span class="stat-label">Games Played</span>
             </div>
-
-            <div class="toggle-item">
-                <div>
-                    <h3>Friend Requests</h3>
-                    <p>Get notified when someone sends you a friend request</p>
-                </div>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
+            <div class="stat-box">
+              <span class="stat-value">38</span>
+              <span class="stat-label">Trophies</span>
             </div>
-
-            <div class="toggle-item">
-                <div>
-                    <h3>Achievement Alerts</h3>
-                    <p>Show alerts when you unlock new achievements</p>
-                </div>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
+            <div class="stat-box">
+              <span class="stat-value">1,250</span>
+              <span class="stat-label">Total Hours</span>
             </div>
+          </div>
         </div>
 
-        <!-- Card 3: Appearance -->
-        <div class="games">
-            <h2>Appearance</h2>
-            <p class="section-label">Neon Profile Theme</p>
+      </div>
 
-            <div class="themes-container">
-                <label class="theme-option active">
-                    <input type="radio" name="theme" value="cyan" checked>
-                    <span class="theme-box cyan"></span>
-                    <span class="theme-name">Neon Cyan</span>
-                </label>
-
-                <label class="theme-option">
-                    <input type="radio" name="theme" value="purple">
-                    <span class="theme-box purple"></span>
-                    <span class="theme-name">Electric Purple</span>
-                </label>
-
-                <label class="theme-option">
-                    <input type="radio" name="theme" value="lime">
-                    <span class="theme-box lime"></span>
-                    <span class="theme-name">Cyber Lime</span>
-                </label>
-            </div>
-
-            <div class="slider-group">
-                <label for="ui-scale">UI Scale</label>
-                <input type="range" id="ui-scale" min="80" max="120" value="100">
-            </div>
-        </div>
-
-        <!-- Card 4: Audio -->
-        <div class="games">
-            <h2>Audio</h2>
-
-            <div class="slider-group">
-                <label for="master-volume">Master Volume</label>
-                <input type="range" id="master-volume" min="0" max="100" value="80">
-            </div>
-
-            <div class="toggle-group">
-                <div class="toggle-text">
-                    <label for="sound-effects">Sound Effects</label>
-                    <p>Enable UI sound effects and interactions</p>
-                </div>
-                <label class="switch">
-                    <input type="checkbox" id="sound-effects" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
+      <div class="actions-card">
+        <a href="#logout" class="logout-btn">
+          <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+      </div>
 
     </div>
+</section>
+   
+    <!-- --------------------end of profile---------------  -->
+     <!-- -------------- start of footer ----------------->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!--  Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="logo-box">
+            <img
+              src="assets/favicon.png"
+              alt="NeonViper Logo"
+              class="footer-logo"
+            />
+            <span class="brand-name"
+              >NEON<span class="highlight">Abyss</span></span
+            >
+          </div>
+          <p class="brand-desc">
+            Your ultimate cyberpunk gaming platform. Discover games, battle
+            online, and level up your skills.
+          </p>
+        </div>
+
+        <!--  Contact Info -->
+        <div class="footer-col">
+          <h3 class="col-title">Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> info@neonviper.gg</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (234) 567-890</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Cyber City, District 77
+            </p>
+          </div>
+        </div>
+
+        <!--  Quick Links -->
+        <div class="footer-col">
+          <h3 class="col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#library">Library</a></li>
+            <li><a href="#profile">Social</a></li>
+            <li><a href="/index.html#trophies">Trophies</a></li>
+            <li><a href="/index.html#setting">Settings</a></li>
+          </ul>
+        </div>
+
+        <!--  Social Links -->
+        <div class="footer-col">
+          <h3 class="col-title">Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="bottom-bar">
+        <p>&copy;2026 NeonAbyss. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- -------------- end of footer ------------------->
 </body>
 
 </html>
