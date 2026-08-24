@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Sign Up - First Time</title>
+    <link rel="stylesheet" href="log.css">
 </head>
 
 <body>
@@ -14,23 +15,26 @@
         <h2>Create Account</h2>
         <p class="subtitle">Please fill in your details to get started</p>
 
-        <form class="form-box">
+        <form class="form-box" id="signupform">
 
 
             <div class="input-group">
                 <label for="fullname">Full Name <span class="required">*</span></label>
                 <input type="text" id="fullname" class="input" placeholder="Enter your full name" required>
+                <small id="nameError" style="color: red;"></small>
             </div>
 
 
             <div class="input-group">
                 <label for="email">Email Address <span class="required">*</span></label>
                 <input type="email" id="email" class="input" placeholder="Enter your email" required>
+                <small id="emailError" style="color: red;"></small>
             </div>
 
             <div class="input-group">
                 <label for="password">Password <span class="required">*</span></label>
                 <input type="password" id="password" class="input" placeholder="Enter password" required>
+                <small id="passwordError" style="color: red;"></small>
             </div>
 
 
@@ -40,6 +44,7 @@
                     <option value="" disabled selected>-- Select your age --</option>
                     <option value="under15">Under 15 years old</option>
                     <option value="15plus">15 years old or above (15+)</option>
+                    <small id="ageError" style="color: red;"></small>
                 </select>
             </div>
 
@@ -48,7 +53,11 @@
 
         </form>
     </div>
-
+    <script src="log.js"></script>
 </body>
 
 </html>
+
+
+
+
