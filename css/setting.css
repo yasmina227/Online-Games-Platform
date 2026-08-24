@@ -319,6 +319,7 @@ background-color: var(--lime-neon);
   
 }
 .change-pswd-btn{
+  width: 50%;
    height: 7vh;
    margin: 0 1rem;
    outline: none;
@@ -373,7 +374,7 @@ background-color: var(--lime-neon);
     padding: 1rem;
   }
   .change-pswd-btn{
-    padding: .5rem 1rem;
+    width: 200px;
   }
   .toggle-switch{
     width:70px ;
