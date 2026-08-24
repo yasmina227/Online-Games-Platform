@@ -45,7 +45,7 @@ body.theme-lime {
     color: var(--text-muted);
 }
 /* profile  */
-.set-profile,.set-notification,.set-appearance,.set-audio{
+.set-profile,.set-notification,.set-appearance,.set-audio,.set-privacy{
     border: 1px solid var(--main-neon);
     border-radius: 1.5rem;
 }
@@ -91,7 +91,7 @@ outline: var(--main-neon);
 
 .notification-info p {
   margin: 0;
-  color: var();
+  color: var(--text-muted);
 }
 
 
@@ -117,7 +117,7 @@ outline: var(--main-neon);
   bottom: 0;
   background-color: var(--input-bg);
   transition: 0.3s;
-  border-radius: 34px;
+  border-radius: 2.1rem;
 }
 
 
@@ -250,7 +250,6 @@ background-color: var(--lime-neon);
 .custom-range:hover,
 .custom-range:focus {
   box-shadow: 0 0 10px var(--main-neon);
-  transform: scale(1.2);
 }
 
 
@@ -315,6 +314,28 @@ background-color: var(--lime-neon);
   background-color: var(--bg-card);
 }
 /* ---------------------------------------- */
+/* privacy  */
+.set-privacy{
+  
+}
+.change-pswd-btn{
+  width: 50%;
+   height: 7vh;
+   margin: 0 1rem;
+   outline: none;
+   border: 1px solid rgba(255, 0, 0, 0.766);
+   border-radius: 1rem;
+   background-color: rgba(255, 0, 0, 0.116);
+   color: white;
+   font-weight: bold;
+   font-size: 1.5rem;
+   transition: all 0.3s ease;
+}
+.change-pswd-btn:hover{
+  transform: scale(1.01);
+
+}
+/* ---------------------------------------- */
 /* setting button  */
 .setting-footer {
  display: flex;
@@ -331,6 +352,7 @@ background-color: var(--lime-neon);
   border-radius: 0.6rem;
   cursor: pointer;
   outline: none;
+  margin:1rem 0;
   transition: all 0.3s ease;
 }
 
@@ -350,6 +372,9 @@ background-color: var(--lime-neon);
 @media (max-width: 768px) {
   .setting-container {
     padding: 1rem;
+  }
+  .change-pswd-btn{
+    width: 200px;
   }
   .toggle-switch{
     width:70px ;

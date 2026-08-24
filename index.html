@@ -42,11 +42,11 @@
           <i class="fa-solid fa-book-open"></i>
         </a>
 
-        <a href="#" class="nav-link" data-tooltip="Trophies">
+        <a href="#trophies" class="nav-link" data-tooltip="Trophies">
           <i class="fa-solid fa-trophy"></i>
         </a>
 
-        <a href="#social" class="nav-link" data-tooltip="Social">
+        <a href="/profile.html" class="nav-link" data-tooltip="profile">
           <i class="fa-solid fa-users"></i>
         </a>
 
@@ -73,7 +73,7 @@
         <div class="user-actions">
           <a href="/profile.html" class="avatar-link" data-tooltip="Social Profile">
             <img
-              src="https://images.unsplash.com/photo-1740252117070-7aa2955b25f8?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://th.bing.com/th/id/OIP.NLh6c2gtouyYHCcQEjNgRQHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Avatar"
               class="user-avatar"
             />
@@ -518,7 +518,7 @@
                 </td>
                 <td class="fw-bold text-white">138,920</td>
                 <td class="text-secondary">Lvl 48</td>
-               
+                
             </tr>
 
             <!-- #4 -->
@@ -727,7 +727,7 @@
                 </div>
                 <label class="custom-switch-audio">
                   <input type="checkbox" checked />
-                  <span class="slider-audio round-audio"></span>
+                  <span class="slider-audio  round-audio"></span>
                 </label>
               </div>
 
@@ -763,7 +763,42 @@
       <!-- -------------------------------------- -->
       <!-- setting footer  -->
       <div class="setting-footer">
-        <div class="set-privacy"></div>
+        <div class=" container-fluid p-5 set-privacy w-100  ">
+          
+              <div class="setting-profile-header mb-3">
+                <i
+                  class="fa-solid fa-shield setting-profile-icon p-2 me-2"
+                ></i>
+                <span class="style-seeting-heads">Security & Privacy</span>
+              </div>
+
+              <div class="setting-item-container d-lg-flex justify-content-between align-items-center">
+                <div class="w-lg-50">
+                <div class="notification-item">
+                <div class="notification-info">
+                  <h5>Two-Factor Authentication</h5>
+                  <p>Add an extra layer of security to your account</p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="friendReq" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-info">
+                  <h5>Profile Visibility</h5>
+                  <p>Allow other players to view your profile</p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="achieveAlerts" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              </div>
+              <button type="button" class="change-pswd-btn" id="">change password</button>
+              </div>
+        </div>
         <input type="button" value="save changes" class="save-btn  " />
       </div>
     </section>
@@ -808,7 +843,7 @@
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#library">Library</a></li>
-            <li><a href="#social">Social</a></li>
+            <li><a href="/profile.html">Social</a></li>
             <li><a href="#trophies">Trophies</a></li>
             <li><a href="#setting">Settings</a></li>
           </ul>

@@ -266,6 +266,9 @@ body.theme-lime {
 
 /* Scale down fonts and avatars for mobile screens */
 @media (max-width: 768px) {
+  .leaderboard-section {
+    padding: 0 1.2rem;
+  }
   .main-title {
     font-size: 2.2rem;
   }
