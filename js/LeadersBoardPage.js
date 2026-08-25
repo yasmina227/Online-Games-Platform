@@ -60,12 +60,12 @@ const leaderboardData = {
     }
 };
 
-// 1. Update active button state
-//all buttins in HTML  are stored in one variable using "querySelectorAll" .
+function changeRanking(type, event) {
+    // 1. Update active button state
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
     
-    const clickedBtn = event.currentTarget;
+    const clickedBtn = event ? event.currentTarget : null;
     if (clickedBtn) {
         clickedBtn.classList.add('active');
     }

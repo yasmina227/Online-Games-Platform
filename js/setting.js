@@ -1,55 +1,62 @@
-function CreateUserSchema({email,username,password,bio=""}){
-  return{
-    _id:"user_"+Date.now(),
-    username: username,
-    email : email,
-    password:password,
-    profile:{
-      bio:bio,
-      avatar:"https://th.bing.com/th/id/OIP.NLh6c2gtouyYHCcQEjNgRQHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
-      theme:"cyan",
-      rank :"Gamer",
-    },
-
-    settings:{
-        notification :{
-          pushNotif: false,
-        friendReq: true,
-        achieveAlerts: true
-        },
-        audio :{
-          masterVolume: 75,
-        soundEffects: true
-        },gameplay: {
-        autoPlay: false
-      }
-    },
-
-      createdAt: new Date().toISOString()
-
-
-  };
-}
-
-let Users = JSON.parse(localStorage.getItem("Users")) || [];
-
-function RegisterUser({username,email,password}){
-  const newUser =CreateUserSchema({
-    username:username,
-    email:email,
-    password:password
-  });
-  Users.push(newUser);
-
-  localStorage.setItem("Users",JSON.stringify(Users));
-  console.log("User registered successfully!",newUser);
-  
-}
-
-RegisterUser("yasmin", "yasmin@gmail.com", "123456");
-
+const saveBtn=document.querySelector("#saveBtn");
 // ------------------ PROFILE ----------------
 
+// Initialization 
+document.addEventListener("DOMContentLoaded", () => {
+  let recentUser = JSON.parse(localStorage.getItem("recetnUser"));
+  let usersList = JSON.parse(localStorage.getItem("Users")) || [];
+
+  if (!recentUser) {
+    recentUser = CreateUserSchema(); 
+    usersList.push(recentUser);
+
+    localStorage.setItem("recentUser", JSON.stringify(recentUser));
+    localStorage.setItem("Users", JSON.stringify(usersList));
+  }
+
+ 
+  populateForm(recentUser);
+});
+
+// profile inputs var 
+const userName = document.querySelector("#userName");
+const email = document.querySelector("#email");
+const bio = document.querySelector("#bio");
+
+// set input field data
+function populateForm(user) {
+  
+
+  if (userName) userName.value = user.username || "guest";
+  if (email) email.value = user.email || "";
+  if (bio) bio.value = user.profile?.bio || "";
+}
+
+
+
+
+// save data
+saveBtn.addEventListener("click",()=>{
+  let user =JSON.parse(localStorage.getItem("recentUser"));
+  let usersList = JSON.parse(localStorage.getItem("Users")) || [];
+  if (!user) return;
+
+  
+  user.username = userName.value;
+  user.email = email.value;
+  user.profile.bio = bio.value;
+
+  // update user data in users array 
+  const userIndex = usersList.findIndex((u) => u._id === user._id);
+  if (userIndex !== -1) {
+    usersList[userIndex] = user;
+  }
+
+  localStorage.setItem("recentUser", JSON.stringify(user));
+  localStorage.setItem("Users", JSON.stringify(usersList));
+
+  console.log("data saved successfully")
+});
 
 // ------------------ NOTIFICATION ----------------
 
