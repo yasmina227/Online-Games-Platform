@@ -56,47 +56,43 @@
     </header>
 
     <!-- --------------------end of header---------------  -->
-    <div class="container">
+    <div class="containerForm w-100">
         <h2>Create Account</h2>
         <p class="subtitle">Please fill in your details to get started</p>
 
         <form class="form-box" id="signupform">
 
+    <div class="input-group">
+        <label for="fullname">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullname" class="input" placeholder="Enter your full name">
+        <small id="nameError" style="color: red;"></small>
+    </div>
 
-            <div class="input-group">
-                <label for="fullname">Full Name <span class="required">*</span></label>
-                <input type="text" id="fullname" class="input" placeholder="Enter your full name" required>
-                <small id="nameError" style="color: red;"></small>
-            </div>
+    <div class="input-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" class="input" placeholder="Enter your email">
+        <small id="emailError" style="color: red;"></small>
+    </div>
 
+    <div class="input-group">
+        <label for="password">Password <span class="required">*</span></label>
+        <input type="password" id="password" class="input" placeholder="Enter password">
+        <small id="passwordError" style="color: red;"></small>
+    </div>
 
-            <div class="input-group">
-                <label for="email">Email Address <span class="required">*</span></label>
-                <input type="email" id="email" class="input" placeholder="Enter your email" required>
-                <small id="emailError" style="color: red;"></small>
-            </div>
+    <div class="input-group">
+        <label for="age-category">Age Category <span class="required">*</span></label>
+        <select id="age-category" class="input">
+            <option value="" disabled selected>-- Select your age --</option>
+            <option value="under15">Under 15 years old</option>
+            <option value="15plus">15 years old or above (15+)</option>
+        </select>
+        <small id="ageError" style="color: red;"></small>
+    </div>
 
-            <div class="input-group">
-                <label for="password">Password <span class="required">*</span></label>
-                <input type="password" id="password" class="input" placeholder="Enter password" required>
-                <small id="passwordError" style="color: red;"></small>
-            </div>
+    <button type="submit" class="btnForm">Sign Up</button>
 
-
-            <div class="input-group">
-                <label for="age-category">Age Category <span class="required">*</span></label>
-                <select id="age-category" class="input" required>
-                    <option value="" disabled selected>-- Select your age --</option>
-                    <option value="under15">Under 15 years old</option>
-                    <option value="15plus">15 years old or above (15+)</option>
-                    <small id="ageError" style="color: red;"></small>
-                </select>
-            </div>
-
-
-            <button type="submit" class="btn">Sign Up</button>
-
-        </form>
+</form>
     </div>
      <!-- -------------- start of footer ----------------->
     <footer class="site-footer">
@@ -171,7 +167,7 @@
     </footer>
 
     <!-- -------------- end of footer ------------------->
-<script  src="js/login.js"></script>
+<script  src="js/signup.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 :root {
   --bg-dark: #0a0b0d;
   --bg-card: #121316;
-  --bg-btn: #232428;
+  --bg-btn: #28292c;
   --border-color: rgba(255, 255, 255, 0.08);
   --cyan-neon: #00f2fe;
   --purple-neon: #9d4edd;
@@ -34,14 +34,13 @@ body {
 
 
 /* --- Layout Container --- */
-.container {
-  width: 100%;
-  max-width: 420px;
+.containerForm {
   padding: 20px;
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--bg-btn);
 }
 
 .form-box {
@@ -50,6 +49,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border-color);
+  width: 50%;
+  margin: auto;
 }
 
 .form-box h2 {
@@ -114,7 +115,7 @@ label {
 }
 
 /* --- Buttons --- */
-.btn {
+.btnForm {
   width: 100%;
   padding: 12px;
   margin-top: 10px;
@@ -128,7 +129,7 @@ label {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btnForm:hover {
   background-color: var(--purple-neon);
   color: var(--text-main);
   box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
@@ -192,4 +193,10 @@ label {
 .contact-form-container {
   width: 100%;
   max-width: 531px;
+}
+
+@media (max-width: 768px) {
+  .form-box{
+    width: 100%;
+  }
 }
