@@ -4,33 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign Up - First Time</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
+    <!-- --------------------start of header---------------  -->
+    <header class="sidebar">
+      <a href="#home" class="logo" data-name="Neon Viper">
+        <img src="assets/favicon.png" alt="Logo" />
+      </a>
 
+      <!-- Navigation Items -->
+      <nav class="nav-menu">
+        <a href="/index.html#home" class="nav-link active" data-tooltip="Home">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <!-- Current Active Link (Library) -->
+        <a href="/index.html#library" class="nav-link" data-tooltip="Library">
+          <i class="fa-solid fa-book-open"></i>
+        </a>
+
+        <a href="/index.html#trophies" class="nav-link" data-tooltip="Trophies">
+          <i class="fa-solid fa-trophy"></i>
+        </a>
+
+        <a href="/index.html#social" class="nav-link" data-tooltip="profile">
+          <i class="fa-solid fa-users"></i>
+        </a>
+
+        <a href="/index.html#setting" class="nav-link" data-tooltip="Settings">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- --------------------end of header---------------  -->
     <div class="container">
         <h2>Create Account</h2>
         <p class="subtitle">Please fill in your details to get started</p>
 
-        <form class="form">
+        <form class="form-box" id="signupform">
 
 
             <div class="input-group">
                 <label for="fullname">Full Name <span class="required">*</span></label>
                 <input type="text" id="fullname" class="input" placeholder="Enter your full name" required>
+                <small id="nameError" style="color: red;"></small>
             </div>
 
 
             <div class="input-group">
                 <label for="email">Email Address <span class="required">*</span></label>
                 <input type="email" id="email" class="input" placeholder="Enter your email" required>
+                <small id="emailError" style="color: red;"></small>
             </div>
 
             <div class="input-group">
                 <label for="password">Password <span class="required">*</span></label>
                 <input type="password" id="password" class="input" placeholder="Enter password" required>
+                <small id="passwordError" style="color: red;"></small>
             </div>
 
 
@@ -40,6 +89,7 @@
                     <option value="" disabled selected>-- Select your age --</option>
                     <option value="under15">Under 15 years old</option>
                     <option value="15plus">15 years old or above (15+)</option>
+                    <small id="ageError" style="color: red;"></small>
                 </select>
             </div>
 
@@ -48,7 +98,80 @@
 
         </form>
     </div>
+     <!-- -------------- start of footer ----------------->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!--  Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="logo-box">
+            <img
+              src="assets/favicon.png"
+              alt="NeonViper Logo"
+              class="footer-logo"
+            />
+            <span class="brand-name"
+              >NEON<span class="highlight">Abyss</span></span
+            >
+          </div>
+          <p class="brand-desc">
+            Your ultimate cyberpunk gaming platform. Discover games, battle
+            online, and level up your skills.
+          </p>
+        </div>
 
+        <!--  Contact Info -->
+        <div class="footer-col">
+          <h3 class="col-title">Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> info@neonviper.gg</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (234) 567-890</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Cyber City, District 77
+            </p>
+          </div>
+        </div>
+
+        <!--  Quick Links -->
+        <div class="footer-col">
+          <h3 class="col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#library">Library</a></li>
+            <li><a href="#profile">Social</a></li>
+            <li><a href="/index.html#trophies">Trophies</a></li>
+            <li><a href="/index.html#setting">Settings</a></li>
+          </ul>
+        </div>
+
+        <!--  Social Links -->
+        <div class="footer-col">
+          <h3 class="col-title">Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="bottom-bar">
+        <p>&copy;2026 NeonAbyss. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- -------------- end of footer ------------------->
+<script  src="js/login.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 :root {
   --bg-dark: #0a0b0d;
   --bg-card: #121316;
-  --bg-btn: #1a1c23;
+  --bg-btn: #232428;
   --border-color: rgba(255, 255, 255, 0.08);
   --cyan-neon: #00f2fe;
   --purple-neon: #9d4edd;
@@ -129,6 +129,7 @@ body {
   }
 }
 
+
 /* ------------------ Main Content Layout ------------------ */
 .main-content {
   margin-left: 80px;
@@ -182,13 +183,43 @@ body {
   box-shadow: 0 0 12px rgba(0, 242, 254, 0.2);
 }
 
+/* login,sign up btns  */
+.auth-bottom {
+  margin-bottom: .5rem;
+}
+.auth-bottom a{
+  text-decoration: none;
+}
+.btn-login {
+    font-size: 1.2rem;
+    background-color: var(--main-neon);
+    color: var(--text-main);
+    padding: 3px 11px;
+    border-radius: .8rem;
+    margin-right: 7px;
+    margin-left: 1rem;
+
+    
+}
+.btn-signup {
+    border-radius: .8rem;
+     color: var(--text-main);
+    margin-left: 16px;
+    font-size: 20px;
+    border: 1px solid var(--text-main);
+    padding: 3px 11px;
+
+}
+
 /* User Actions & Avatar */
 .user-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .avatar-link {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -196,9 +227,8 @@ body {
   background: linear-gradient(135deg, var(--main-neon), var(--purple-neon));
   box-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
   display: block;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  margin-left: 2rem;
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
 }
 
 .avatar-link:hover {
