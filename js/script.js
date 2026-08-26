@@ -2,7 +2,7 @@ function CreateUserSchema({email,username,password,bio=""}){
   return{
     _id:"user_"+Date.now(),
     username: username,
-    email : email||" ",
+    email : email,
     password:password,
     profile:{
       bio:bio,
@@ -35,8 +35,8 @@ let Users = JSON.parse(localStorage.getItem("Users")) || [];
 
 function RegisterUser({username,email,password}){
   const newUser =CreateUserSchema({
+     mail:email,
     username:username,
-    email:email,
     password:password
   });
   Users.push(newUser);
