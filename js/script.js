@@ -35,8 +35,9 @@ let Users = JSON.parse(localStorage.getItem("Users")) || [];
 
 function RegisterUser({username,email,password}){
   const newUser =CreateUserSchema({
-    email:email,
+    
     username:username,
+    email:email,
     password:password
   });
   Users.push(newUser);
