@@ -112,7 +112,7 @@ user.settings.gameplay.autoPlay = autoPlay.checked;
 
   localStorage.setItem("recentUser", JSON.stringify(user));
   localStorage.setItem("Users", JSON.stringify(usersList));
-
+     alert("data saved successfully!")
   console.log("data saved successfully");
 });
 
