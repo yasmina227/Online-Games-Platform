@@ -48,7 +48,14 @@ function RegisterUser({username,email,password}){
   console.log("User registered successfully!",newUser);
   
 }
-
-// RegisterUser("yasmin","yas@gm","------");
+let x=1;
+if(x){
+  RegisterUser({
+  username: "yasmin",
+  email: "yas@gmail.com",
+  password: "12345"
+});
+x--;
+}
 
 // ---------------------------------------------------
