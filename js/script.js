@@ -35,7 +35,7 @@ let Users = JSON.parse(localStorage.getItem("Users")) || [];
 
 function RegisterUser({username,email,password}){
   const newUser =CreateUserSchema({
-     mail:email,
+    email:email,
     username:username,
     password:password
   });
@@ -48,14 +48,14 @@ function RegisterUser({username,email,password}){
   console.log("User registered successfully!",newUser);
   
 }
-let x=1;
-if(x){
-  RegisterUser({
-  username: "yasmin",
-  email: "yas@gmail.com",
-  password: "12345"
-});
-x--;
-}
+// let x=1;
+// if(x){
+//   RegisterUser({
+//   username: "yasmin",
+//   email: "yas@gmail.com",
+//   password: "12345"
+// // });
+// x--;
+// }
 
 // ---------------------------------------------------
