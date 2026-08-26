@@ -14,10 +14,10 @@
 /* themes  */
 .set-appearance{
   padding:2rem 1rem 7.6rem 1.5rem;
-}
-body.theme-main {
+}body.theme-main {
   --main-neon: var(--main-neon);
 }
+
 
 body.theme-purple {
   --main-neon: var(--purple-neon);
