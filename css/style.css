@@ -355,6 +355,7 @@ body {
   }
   .top-bar {
     margin-top: 80px;
+    flex-wrap: nowrap;
   }
   .logo {
     margin-bottom: 0;
