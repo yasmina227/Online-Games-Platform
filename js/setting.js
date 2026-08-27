@@ -116,7 +116,13 @@ user.settings.gameplay.autoPlay = autoPlay.checked;
   console.log("data saved successfully");
 });
 
-
+let user = JSON.parse(localStorage.getItem("recentUser"));
+let btnsls = document.querySelector(".auth-bottom")
+if(user){
+  btnsls.style.display="none";
+}else{
+  btnsls.style.display="flex";
+}
 
 
 // ------------------ AUDIO ----------------

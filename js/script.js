@@ -1,4 +1,4 @@
-function CreateUserSchema({email,username,password,bio=""}){
+function CreateUserSchema({email="",username="gest",password=" ",bio=""}){
   return{
     _id:"user_"+Date.now(),
     username: username,
@@ -31,24 +31,7 @@ function CreateUserSchema({email,username,password,bio=""}){
   };
 }
 
-let Users = JSON.parse(localStorage.getItem("Users")) || [];
 
-function RegisterUser({username,email,password}){
-  const newUser =CreateUserSchema({
-    
-    username:username,
-    email:email,
-    password:password
-  });
-  Users.push(newUser);
-
-  localStorage.setItem("Users",JSON.stringify(Users));
-
-  localStorage.setItem("recentUser", JSON.stringify(newUser));
-
-  console.log("User registered successfully!",newUser);
-  
-}
 // let x=1;
 // if(x){
 //   RegisterUser({
@@ -58,5 +41,6 @@ function RegisterUser({username,email,password}){
 // // });
 // x--;
 // }
+
 
 // ---------------------------------------------------

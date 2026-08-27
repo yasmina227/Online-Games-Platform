@@ -13,4 +13,9 @@ rankbage.innerHTML=user.profile.rank;
 email.innerHTML=user.email;
 joineddate.innerHTML=user.createdAt;
 
+const logoutbtn = document.querySelector(".logout-btn");
 
+logoutbtn.addEventListener("click",()=>{
+    localStorage.removeItem("recentUser");
+    window.location.href = "login.html";
+});
