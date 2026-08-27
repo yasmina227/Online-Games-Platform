@@ -200,23 +200,3 @@ label {
     width: 100%;
   }
 }
-
-
-
-/* إصلاح تضارب الزراير والروابط داخل نموذج التسجيل */
-.form-box a, 
-.form-box button {
-  margin: 0 !important; /* يلغي المارجن القديم تماماً */
-  box-sizing: border-box;
-}
-
-.signup-link a, 
-.login-link a {
-  display: inline-block;
-  margin: 0 !important;
-}
-
-.btnForm {
-  width: 100% !important;
-  display: block;
-}
