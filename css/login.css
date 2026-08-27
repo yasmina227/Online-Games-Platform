@@ -20,7 +20,11 @@
   font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
 }
 
-
+.nav-menu a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
