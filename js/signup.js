@@ -5,7 +5,7 @@ function RegisterUser({ username, email, password, ageCategory }) {
     username: username,
     email: email,
     password: password,
-    ageCategory: ageCategory
+    ageCategory: ageCategory,
   });
 
   Users.push(newUser);
@@ -16,10 +16,8 @@ function RegisterUser({ username, email, password, ageCategory }) {
   console.log("User registered successfully!", newUser);
 }
 
-
 //---------------------------------------------------------------------------------------------
 const signupForm = document.getElementById("signupform");
-
 
 signupForm.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -63,7 +61,7 @@ signupForm.addEventListener("submit", function (e) {
       username: fullnameInput,
       email: emailInput,
       password: passwordInput,
-      ageCategory: ageCategoryInput
+      ageCategory: ageCategoryInput,
     });
 
     signupForm.reset();

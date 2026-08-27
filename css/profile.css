@@ -174,7 +174,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .logout-btn:hover {
@@ -188,18 +188,18 @@
   .profile-container {
     padding-top: 1rem;
   }
-  
+
   .stats-container {
     grid-template-columns: 1fr;
   }
-  
+
   .actions-card {
     justify-content: center;
   }
-  
+
   .logout-btn {
     width: 100%;
     justify-content: center;
-    margin: 0 .5rem 1rem .5rem;
+    margin: 0 0.5rem 1rem 0.5rem;
   }
 }

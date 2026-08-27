@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile</title>
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,9 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- --------------------start of header---------------  -->
     <header class="sidebar">
       <a href="#home" class="logo" data-name="Neon Viper">
@@ -55,71 +54,72 @@
     <!-- --------------------end of header---------------  -->
     <!-- --------------------start of profile---------------  -->
 
-     <section class="profile">
-    <div class="profile-container">
-      
-      <div class="profile-card">
-        <div class="profile-header-bg"></div>
-        <div class="profile-avatar-wrapper">
-          <img src="https://th.bing.com/th/id/OIP.NLh6c2gtouyYHCcQEjNgRQHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="profile-avatar">
+    <section class="profile">
+      <div class="profile-container">
+        <div class="profile-card">
+          <div class="profile-header-bg"></div>
+          <div class="profile-avatar-wrapper">
+            <img
+              src="https://th.bing.com/th/id/OIP.NLh6c2gtouyYHCcQEjNgRQHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              class="profile-avatar"
+            />
+          </div>
+          <div class="profile-identity">
+            <h1 class="user-name">yasmin</h1>
+            <span class="user-tag">@yasmina</span>
+            <span class="rank-badge">PRO GAMER>>>>></span>
+          </div>
         </div>
-        <div class="profile-identity">
-          <h1 class="user-name">yasmin</h1>
-          <span class="user-tag">@yasmina</span>
-          <span class="rank-badge">PRO GAMER>>>>></span>
+
+        <div class="profile-grid">
+          <div class="info-card">
+            <h2 class="card-title">Personal Details</h2>
+            <div class="info-group">
+              <label>Email</label>
+              <p id="email">yasmin@gail.com</p>
+            </div>
+            <div class="info-group">
+              <label>Joined</label>
+              <p id="joineddate">January 2024</p>
+            </div>
+            <div class="info-group">
+              <label>Region</label>
+              <p>Egypt</p>
+            </div>
+            <button class="edit-btn">
+              <i class="fa-solid fa-pen"></i> Edit Profile
+            </button>
+          </div>
+
+          <div class="info-card">
+            <h2 class="card-title">Activity Overview</h2>
+            <div class="stats-container">
+              <div class="stat-box">
+                <span class="stat-value">142</span>
+                <span class="stat-label">Games Played</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">38</span>
+                <span class="stat-label">Trophies</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">1,250</span>
+                <span class="stat-label">Total Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions-card">
+          <a href="#logout" class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+          </a>
         </div>
       </div>
+    </section>
 
-      <div class="profile-grid">
-        
-        <div class="info-card">
-          <h2 class="card-title">Personal Details</h2>
-          <div class="info-group">
-            <label>Email</label>
-            <p id="email">yasmin@gail.com</p>
-          </div>
-          <div class="info-group">
-            <label>Joined</label>
-            <p id="joineddate">January 2024</p>
-          </div>
-          <div class="info-group">
-            <label>Region</label>
-            <p>Egypt</p>
-          </div>
-          <button class="edit-btn"><i class="fa-solid fa-pen"></i> Edit Profile</button>
-        </div>
-
-        <div class="info-card">
-          <h2 class="card-title">Activity Overview</h2>
-          <div class="stats-container">
-            <div class="stat-box">
-              <span class="stat-value">142</span>
-              <span class="stat-label">Games Played</span>
-            </div>
-            <div class="stat-box">
-              <span class="stat-value">38</span>
-              <span class="stat-label">Trophies</span>
-            </div>
-            <div class="stat-box">
-              <span class="stat-value">1,250</span>
-              <span class="stat-label">Total Hours</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="actions-card">
-        <a href="#logout" class="logout-btn">
-          <i class="fa-solid fa-right-from-bracket"></i> Logout
-        </a>
-      </div>
-
-    </div>
-</section>
-   
     <!-- --------------------end of profile---------------  -->
-     <!-- -------------- start of footer ----------------->
+    <!-- -------------- start of footer ----------------->
     <footer class="site-footer">
       <div class="footer-container">
         <!--  Brand Info -->
@@ -192,7 +192,6 @@
     </footer>
 
     <!-- -------------- end of footer ------------------->
-     <script src="js/profile.js"></script>
-</body>
-
+    <script src="js/profile.js"></script>
+  </body>
 </html>

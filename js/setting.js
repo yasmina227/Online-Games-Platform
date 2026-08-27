@@ -1,7 +1,7 @@
 const saveBtn = document.querySelector("#saveBtn");
 
 // ------------------ PROFILE ----------------
-// profile inputs var 
+// profile inputs var
 const userName = document.querySelector("#userName");
 const email = document.querySelector("#email");
 const bio = document.querySelector("#bio");
@@ -13,7 +13,7 @@ const achieveAlerts = document.querySelector("#achieveAlerts");
 //----------------------- appearance ----------------
 let selectedTheme;
 //----------------------- audio -----------------
-const masterVolume =document.querySelector("#masterVolume");
+const masterVolume = document.querySelector("#masterVolume");
 const autoPlay = document.querySelector("#autoPlay");
 //------------------- APPEARNCE -----------------
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,30 +21,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   themeBtns.forEach((btn) => {
     btn.addEventListener("click", function (e) {
-
       const selectedBtn = e.target.closest(".theme-btn");
-      
 
       themeBtns.forEach((b) => b.classList.remove("active"));
       selectedBtn.classList.add("active");
 
+      selectedTheme = selectedBtn.getAttribute("data-theme");
 
-       selectedTheme = selectedBtn.getAttribute("data-theme");
-
-
-      document.body.classList.remove("theme-cyan", "theme-purple", "theme-lime");
+      document.body.classList.remove(
+        "theme-cyan",
+        "theme-purple",
+        "theme-lime",
+      );
       document.body.classList.add(`theme-${selectedTheme}`);
     });
   });
 });
 
-// Initialization 
+// Initialization
 document.addEventListener("DOMContentLoaded", () => {
   let recentUser = JSON.parse(localStorage.getItem("recentUser"));
   let usersList = JSON.parse(localStorage.getItem("Users")) || [];
 
   if (!recentUser) {
-    recentUser = CreateUserSchema(); 
+    recentUser = CreateUserSchema();
     usersList.push(recentUser);
 
     localStorage.setItem("recentUser", JSON.stringify(recentUser));
@@ -59,10 +59,13 @@ function populateForm(user) {
   if (userName) userName.value = user.username || "guest";
   if (email) email.value = user.email || "";
   if (bio) bio.value = user.profile?.bio || "";
-  
-  if (pushNotif) pushNotif.checked = Boolean(user.settings?.notification?.pushNotif);
-  if (friendReq) friendReq.checked = Boolean(user.settings?.notification?.friendReq);
-  if (achieveAlerts) achieveAlerts.checked = Boolean(user.settings?.notification?.achieveAlerts);
+
+  if (pushNotif)
+    pushNotif.checked = Boolean(user.settings?.notification?.pushNotif);
+  if (friendReq)
+    friendReq.checked = Boolean(user.settings?.notification?.friendReq);
+  if (achieveAlerts)
+    achieveAlerts.checked = Boolean(user.settings?.notification?.achieveAlerts);
 
   const currentTheme = user.profile?.theme || "cyan";
   selectedTheme = currentTheme;
@@ -70,13 +73,15 @@ function populateForm(user) {
   document.body.classList.add(`theme-${currentTheme}`);
 
   const themeBtns = document.querySelectorAll(".theme-btn");
-  const activeBtn = document.querySelector(`.theme-btn[data-theme="${currentTheme}"]`);
+  const activeBtn = document.querySelector(
+    `.theme-btn[data-theme="${currentTheme}"]`,
+  );
   themeBtns.forEach((b) => b.classList.remove("active"));
   if (activeBtn) activeBtn.classList.add("active");
 
-  masterVolume.value=user.settings.audio.masterVolume ||60;
+  masterVolume.value = user.settings.audio.masterVolume || 60;
 
-  if(autoPlay) autoPlay.checked = Boolean(user.settings?.gamePlay?.autoPlay);
+  if (autoPlay) autoPlay.checked = Boolean(user.settings?.gamePlay?.autoPlay);
 }
 
 // save data
@@ -87,7 +92,7 @@ saveBtn.addEventListener("click", () => {
 
   user.username = userName.value;
   user.email = email.value;
-  
+
   if (!user.profile) user.profile = {};
   user.profile.bio = bio.value;
 
@@ -103,8 +108,8 @@ saveBtn.addEventListener("click", () => {
   user.settings.audio.masterVolume = masterVolume.value;
 
   if (!user.settings.gameplay) user.settings.gameplay = {};
-user.settings.gameplay.autoPlay = autoPlay.checked;
-  // update user data in users array 
+  user.settings.gameplay.autoPlay = autoPlay.checked;
+  // update user data in users array
   const userIndex = usersList.findIndex((u) => u._id === user._id);
   if (userIndex !== -1) {
     usersList[userIndex] = user;
@@ -112,17 +117,16 @@ user.settings.gameplay.autoPlay = autoPlay.checked;
 
   localStorage.setItem("recentUser", JSON.stringify(user));
   localStorage.setItem("Users", JSON.stringify(usersList));
-     alert("data saved successfully!")
+  alert("data saved successfully!");
   console.log("data saved successfully");
 });
 
 let user = JSON.parse(localStorage.getItem("recentUser"));
-let btnsls = document.querySelector(".auth-bottom")
-if(user){
-  btnsls.style.display="none";
-}else{
-  btnsls.style.display="flex";
+let btnsls = document.querySelector(".auth-bottom");
+if (user) {
+  btnsls.style.display = "none";
+} else {
+  btnsls.style.display = "flex";
 }
-
 
 // ------------------ AUDIO ----------------

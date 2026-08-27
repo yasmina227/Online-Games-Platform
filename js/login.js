@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const users = JSON.parse(localStorage.getItem("Users")) || [];
 
         const foundUser = users.find(
-          (user) => user.email === emailInput && user.password === passwordInput
+          (user) =>
+            user.email === emailInput && user.password === passwordInput,
         );
 
         if (foundUser) {
